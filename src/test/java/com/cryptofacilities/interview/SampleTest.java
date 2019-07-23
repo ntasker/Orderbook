@@ -6,9 +6,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by CF-8 on 6/27/2017.
- */
+
 public class SampleTest {
 
     @Test

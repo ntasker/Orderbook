@@ -3,9 +3,7 @@ package com.cryptofacilities.interview;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * Created by CF-8 on 6/27/2017.
- */
+
 public class OrderBookManagerImpl implements OrderBookManager {
 
     //Sorts by lowest for asks and by highest for bids
