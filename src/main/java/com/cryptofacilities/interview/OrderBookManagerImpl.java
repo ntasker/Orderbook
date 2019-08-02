@@ -98,6 +98,8 @@ public class OrderBookManagerImpl implements OrderBookManager {
     public void deleteOrder(String orderId) {
         try {
             Set<Order> ordersFromLevel = orders.get(ordersToLevels.get(orderId));
+            if (ordersFromLevel == null) throw new Exception();
+            
             for (Order order : ordersFromLevel) {
 
                 if (order.getOrderId().equals(orderId)) {
