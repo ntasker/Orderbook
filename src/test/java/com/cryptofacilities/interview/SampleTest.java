@@ -83,7 +83,7 @@ public class SampleTest {
         //delete the order
         orderBookManager.deleteOrder("1");
 
-        expectedNum = -1;
+        expectedNum = 0;
         numOfOrders = orderBookManager.getOrderNumAtLevel("VOD.L", Side.buy, 120);
         assertEquals("There are no orders after the deletion", expectedNum, numOfOrders);
 

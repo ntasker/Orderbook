@@ -178,13 +178,7 @@ public class OrderBookManagerImpl implements OrderBookManager {
                 }
             }
         }
-
-        if(count > 0){
-            return count;
-        }
-        else {
-            return -1;
-        }
+        return count;
     }
 
     public long getTotalQuantityAtLevel(String instrument, Side side, long price) {
@@ -203,12 +197,7 @@ public class OrderBookManagerImpl implements OrderBookManager {
                 totalQuantity = totalQuantity + order.getQuantity();
             }
         }
-
-        if (totalQuantity == 0) {
-            return -1;
-        }
         return totalQuantity;
-
     }
 
     public long getTotalVolumeAtLevel(String instrument, Side side, long price) {
