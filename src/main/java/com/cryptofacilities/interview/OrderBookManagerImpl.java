@@ -219,9 +219,6 @@ public class OrderBookManagerImpl implements OrderBookManager {
             }
         }
 
-        if (totalVolume == 0) {
-            return -1;
-        }
         return totalVolume;
     }
 
